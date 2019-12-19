@@ -20,7 +20,11 @@ const stateTypes = {
   },
   stateTwo : {
     stateTwo : 'stateTwo',
-    paylod : 14
+    payload : 14
+  },
+  stateThree : {
+    stateThree : 'stateThree',
+    payload : 66
   }
 };
 
@@ -29,6 +33,7 @@ const currentState = stateTypes.stateOne;
 if(currentState === stateTypes.stateOne) { console.log("State 1"); } 
 if(currentState === stateTypes.stateTwo) { console.log("State 2"); } 
 
+// --- end of object literal comparison provoke ---
 
 var app = express();
 
