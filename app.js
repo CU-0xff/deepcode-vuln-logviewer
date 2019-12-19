@@ -27,6 +27,7 @@ const stateTypes = {
 const currentState = stateTypes.stateOne;
 
 if(currentState === stateTypes.stateOne) { console.log("State 1"); } 
+if(currentState === stateTypes.stateTwo) { console.log("State 2"); } 
 
 
 var app = express();
