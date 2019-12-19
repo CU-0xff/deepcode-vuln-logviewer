@@ -12,6 +12,23 @@ var createDummyData = require('./routes/createDummyData');
 var monk = require('monk');
 var db = monk('localhost:27017/DeepCode-Vuln-LogViewer');
 
+//Provoke object literal error
+const stateTypes = {
+  stateOne : {
+    stateOne : 'stateOne',
+    payload : 42
+  },
+  stateTwo : {
+    stateTwo : 'stateTwo',
+    paylod : 14
+  }
+};
+
+const currentState = stateTypes.stateOne;
+
+if(currentState === stateTypes.stateOne) { console.log("State 1"); } 
+
+
 var app = express();
 
 // view engine setup
